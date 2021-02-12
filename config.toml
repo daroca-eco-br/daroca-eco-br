@@ -2,7 +2,7 @@
 baseURL = "https://www.daroca.eco.br"
 languageCode = "en"
 title = "Da Roça"
-theme = "hargo"
+theme = "daroca"
 summaryLength = "20"
 paginate = 10
 disqusShortname = ""
