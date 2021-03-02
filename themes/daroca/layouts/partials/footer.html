@@ -6,7 +6,7 @@
             alt="{{ site.Title }}"></a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <h5 class="font-weight-medium mb-4">Important Links</h5>
+        <h5 class="font-weight-medium mb-4">Menu</h5>
         <ul class="list-unstyled">
           {{ range site.Menus.main }}
           <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
@@ -14,11 +14,11 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-6">
-        <h5 class="font-weight-medium mb-4">Connect With Us</h5>
+        <h5 class="font-weight-medium mb-4">Contate por</h5>
         <ul class="list-unstyled mb-5">
-          <li class="mb-3"><a class="text-color" href="tel:{{ site.Params.mobile }}"><i
+          <li class="mb-3"><a class="text-color" href="tel:+{{ site.Params.mobile }}"><i
                 class="ti-mobile text-primary mr-2"></i>
-              {{ site.Params.mobile }}</a></li>
+              +{{ site.Params.mobile }}</a></li>
           <li class="mb-3"><a class="text-color" href="mailto:{{ site.Params.email }}"><i
                 class="ti-email text-primary mr-2"></i> {{ site.Params.email }}</a></li>
           <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> {{ site.Params.location }}
@@ -31,6 +31,7 @@
           {{ end }}
         </ul>
       </div>
+      {{ if site.Params.contact.enable }}
       <div class="col-lg-4 col-md-5">
         <h5 class="font-weight-medium mb-4">Contact us</h5>
         <form action="{{ site.Params.contact.formAction }}" method="POST">
@@ -40,10 +41,12 @@
           <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
         </form>
       </div>
+      {{ end }}
     </div>
     <div class="row">
       <div class="col-12 text-center py-4">
-        {{ site.Params.copyright | markdownify  }}
+        {{ site.Params.copyright | markdownify  }} <br />
+        {{ site.Params.pngtree | markdownify  }}
       </div>
     </div>
   </div>

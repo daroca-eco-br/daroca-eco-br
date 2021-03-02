@@ -22,11 +22,13 @@
               {{ end }}
               <span class="lead text-primary">{{ site.Params.currencySymbol }}{{ .Params.Price }}</span>
             </div>
+            {{ if site.Params.shopEnabled }}
             <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
               data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
               {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}" data-item-description="{{ .Description }}">
-              Add to cart
+              Adicionar ao Carrinho
             </button>
+            {{ end }}
           </div>
         </div>
       </div>

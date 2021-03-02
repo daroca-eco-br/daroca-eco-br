@@ -34,16 +34,30 @@
       </div>
       <div class="col-lg-4">
         <h3 class="
-        mb-4">Contact us</h3>
+        mb-4">Contato</h3>
+        {{ if site.Params.contact.enable }}
         <form action="{{ site.Params.contact.formAction }}" method="POST">
-          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
-          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
-          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
-          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Seu Nome">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Seu Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Sua Menssagem"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Enviar Agora</button>
         </form>
+        {{ end  }}
       </div>
     </div>
   </div>
+</section>
+{{ else }}
+<section class="section pt-0">
+    <div class="container">
+    <article>
+  <div class="content">
+      <p>Para Dúvidas, envie uma mensagem:</p>
+      <a href="https://wa.me/{{ site.Params.mobile }}" class="btn btn-success" role="button">WhatsApp</a>
+      <a href="intent://{{ site.Params.mobile }}#Intent;scheme=smsto;package=org.thoughtcrime.securesms;action=android.intent.action.SENDTO;end" class="btn btn-primary" role="button">Signal</a>
+  </div>
+    </article> 
+    </div>
 </section>
 {{ end }}
 

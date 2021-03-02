@@ -27,23 +27,35 @@
           {{ end }}
           <span class="lead text-primary font-weight-medium">{{ site.Params.currencySymbol }}{{ .Params.Price }}</span>
         </div>
-        <h5>Short Description</h5>
+        <h5>Descrição</h5>
         <p>{{ .Params.ShortDescription | markdownify }}</p>
+        <h5>Ficha Técnica</h5>
+        <table class="table table-sm">
+            <tbody>
+            {{ range .Params.Specs }}
+            <tr>
+                <th scope="row">{{ delimit .spec ": </th> <td>" }}</td>
+            </tr>
+            {{ end }}
+            </tbody>
+        </table>
+        {{ if site.Params.shopEnabled }}
         <button class="snipcart-add-item btn btn-primary" data-item-id="{{ .Params.ProductID }}"
           data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
           {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}" data-item-description="{{ .Description }}">
-          Add to cart
+          Adicionar ao Carrinho
         </button>
+        {{ end }}
       </div>
       <div class="col-12 mt-5">
         <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
           <li class="nav-item mr-3">
             <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
-              aria-controls="description" aria-selected="true">Description</a>
+              aria-controls="description" aria-selected="true">Descrição</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-              aria-selected="false">Reviews</a>
+              aria-selected="false">Avaliações</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">

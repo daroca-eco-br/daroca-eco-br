@@ -1,11 +1,11 @@
 ######################## default configuration ####################
 baseURL = "https://www.daroca.eco.br"
 languageCode = "en"
-title = "Da Roça"
+title = "Empório da Roça"
 theme = "daroca"
 summaryLength = "20"
 paginate = 10
-disqusShortname = ""
+disqusShortname = "emporiodaroca"
 
 ############################# Plugins ##############################
 [params.plugins]
@@ -32,33 +32,30 @@ disqusShortname = ""
 ############################## navigation ###############################
 [menu]
 
-  [[menu.main]]
-  name = "Cafés Especiais"
-  URL = "products"
-  weight = 1
+  #[[menu.main]
+  #name = "Produtos"
+  #URL = "products"
+  #weight = 1
 
   [[menu.main]]
   name = "Blog"
   URL = "blog"
-  weight = 2
+  weight = 1
 
- # [[menu.main]]
- # name = "Dúvidas"
- # URL = "duvidas"
- # weight = 3
 
   [[menu.main]]
   name = "Contato"
   URL = "contact"
-  weight = 3
+  weight = 2
 
 #################### default parameters ################################
 [params]
 logo = "images/logo_daroca.png"
-home = "Home"
+home = "Inicio"
+productAsIndex = true
 # Meta data
-description = "Da Roça Produtos do Interior"
-author = "BetaLine"
+description = "Empório da Roça"
+author = "BetaLinePat"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 mapLatitude = "51.5223477"
@@ -67,27 +64,30 @@ mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
-mobile = "+5535998302864"
+mobile = "5535998302864"
 email = "vendas@daroca.eco.br"
 location = "Piranguinho, Minas Gerais"
 # copyright
-copyright = "| Da Roça Produtos do Interior &copy; | Desenvolvido com [Hugo](https://gohugo.io/)"
+copyright = "| Empório da Roça Produtos do Interior &copy; | Desenvolvido com [Hugo](https://gohugo.io/)"
 # Snipcart Credentials
 shopEnabled = false
 snipcartApiKey = ""
 currencySymbol = "R$ "
 
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = ".png" # use .png , .svg or .gif format
+#PNGTree Licence
+pngtree = "[some raw materials from pngtree](https://pngtree.com/so/raw-material) CC images"
 
-  # Product Rating
-  # it works with https://rating-widget.com/ , you will get the ID and publicKey after creating your account there.
-  [params.rating]
-  enable = false
-  websiteID = ""
-  publicKey = ""
+ # Preloader
+[params.preloader]
+enable = true
+preloader = ".png" # use .png , .svg or .gif format
+
+# Product Rating
+# it works with https://rating-widget.com/ , you will get the ID and publicKey after creating your account there.
+[params.rating]
+enable = false
+websiteID = ""
+publicKey = ""
 
   # Social Site
 #  [[params.social]]
@@ -110,6 +110,7 @@ currencySymbol = "R$ "
 #  icon = "ti-pinterest"
 #  link = "#"
 
-  # Contact Form
-  [params.contact]
-  formAction = "#" # contact form works with formspree.io
+# Contact Form
+[params.contact]
+enable = false
+formAction = "#" # contact form works with formspree.io
