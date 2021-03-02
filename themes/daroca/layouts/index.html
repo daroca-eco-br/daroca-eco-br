@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+{{ if site.Params.productAsIndex }}
+{{ partial "home-products.html" }}
+{{ else }}
+{{ partial "home-default.html" }}
+{{ end }}
+<!-- /testimonial -->
+
+{{ if site.Data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+
+{{ end }}
