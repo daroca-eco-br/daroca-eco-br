@@ -1,6 +1,6 @@
 
 ---
-title: "Catuai Amarelo"
+title: "Grãos de Catuai Amarelo"
 date: 2021-03-02T15:55:04-03:00
 draft: false
 
@@ -24,6 +24,7 @@ specs:
   - spec: ["Variedade", "Catuai Amarelo"]
   - spec: ["Processo", "Natural"]
   - spec: ["Torra", "média"]
+  - spec: ["Forma", "Em grãos"]
 
 #product ID
 productID: "3"

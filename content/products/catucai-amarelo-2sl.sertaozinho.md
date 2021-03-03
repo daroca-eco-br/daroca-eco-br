@@ -1,6 +1,6 @@
 
 ---
-title: "Catucai Amarelo 2SL"
+title: "Grãos de Catucai Amarelo 2SL"
 date: 2021-03-01T14:49:50-03:00
 draft: false
 
@@ -24,6 +24,7 @@ specs:
   - spec: ["Variedade", "Catucaí Amarelo"]
   - spec: ["Processo", "Natural"]
   - spec: ["Torra", "média"]
+  - spec: ["Forma", "Em grãos"]
 
 #product ID
 productID: "1"

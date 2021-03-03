@@ -1,6 +1,6 @@
 
 ---
-title: "Rubi Vermelho"
+title: "Grãos de Rubi Vermelho"
 date: 2021-03-02T15:54:45-03:00
 draft: false
 
@@ -24,6 +24,7 @@ specs:
   - spec: ["Variedade", "Rubi Vermelho"]
   - spec: ["Processo", "Natural"]
   - spec: ["Torra", "média"]
+  - spec: ["Forma", "Em grãos"]
 
 #product ID
 productID: "6"

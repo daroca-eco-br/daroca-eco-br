@@ -1,6 +1,6 @@
 
 ---
-title: "Bourbom Amarelo"
+title: "Grãos de Bourbom Amarelo"
 date: 2021-03-02T15:54:30-03:00
 draft: false
 
@@ -24,6 +24,7 @@ specs:
   - spec: ["Variedade", "Bourbom Amarelo"]
   - spec: ["Processo", "Fermentado"]
   - spec: ["Torra", "média"]
+  - spec: ["Forma", "Em grãos"]
 
 #product ID
 productID: "2"

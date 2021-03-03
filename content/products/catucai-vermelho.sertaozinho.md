@@ -1,6 +1,6 @@
 
 ---
-title: "Catucai Vermelho"
+title: "Grãos de Catucai Vermelho"
 date: 2021-03-02T15:55:52-03:00
 draft: false
 
@@ -24,6 +24,7 @@ specs:
   - spec: ["Variedade", "Catucai Vermelho"]
   - spec: ["Processo", "Natural"]
   - spec: ["Torra", "média"]
+  - spec: ["Forma", "Em grãos"]
 
 #product ID
 productID: "5"
