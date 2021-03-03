@@ -1,5 +1,11 @@
-<footer class="section pb-0">
+<footer class="pb-0">
   <div class="container">
+      <div class="col-12 text-center section-sm">
+          <p>Entre em contato conosco por Whatsapp ou Signal para realizar a compra. <br/>No momento estamos aceitando pagamento por PIX:</p>
+    <a href="https://wa.me/{{ site.Params.mobile }}" class="btn btn-success" role="button">WhatsApp</a><br/><br/>
+
+    <a href="intent://{{ site.Params.mobile }}#Intent;scheme=smsto;package=org.thoughtcrime.securesms;action=android.intent.action.SENDTO;end" class="btn btn-primary" role="button">Signal</a><br/>
+      </div>
     <div class="row border-bottom pb-5 justify-content-between">
       <div class="col-12 text-center section-sm">
         <a href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" class="img-fluid"
