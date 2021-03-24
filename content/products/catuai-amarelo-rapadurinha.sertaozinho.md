@@ -1,5 +1,5 @@
 ---
-title: "Grãos de Catuai Amarelo Rapadurinha"
+title: "Grãos de Catuai Amarelo \"Rapadurinha\""
 date: 2021-03-24T17:12:35-03:00
 draft: false
 
