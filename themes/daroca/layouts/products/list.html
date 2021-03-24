@@ -17,10 +17,14 @@
             <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
             <p>{{ .Params.Description }}</p>
             <div class="mb-4">
+                {{ if .Params.Price }}
               {{ if .Params.PriceBefore }}
               <s>{{ site.Params.currencySymbol }}{{ .Params.PriceBefore }}</s>
               {{ end }}
               <span class="lead text-primary">{{ site.Params.currencySymbol }}{{ .Params.Price }}</span>
+              {{ else }}
+              <span class="lead text-primary"><strong>ESGOTADO</strong></span>
+              {{ end }}
             </div>
             {{ if site.Params.shopEnabled }}
             <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
