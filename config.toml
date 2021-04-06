@@ -74,6 +74,9 @@ shopEnabled = false
 snipcartApiKey = ""
 currencySymbol = "R$ "
 
+# FrontPage Alert
+frontAlert = "Devido à Pandemia do COVID-19, o tempo de envio das encomendas aumentou."
+
 #PNGTree Licence
 pngtree = "[some raw materials from pngtree](https://pngtree.com/so/raw-material) CC images"
 
