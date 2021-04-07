@@ -1,5 +1,8 @@
 <!-- products -->
   <div class="container">
+ {{ if site.Params.frontAlert }}
+ <div class="alert alert-danger" role="alert"><center>{{ site.Params.frontAlert }}</center></div>
+{{ end }}
     <div class="row">
       {{ range (where site.RegularPages "Type" "products") }}
       <div class="col-lg-4 col-sm-6 mb-4">
